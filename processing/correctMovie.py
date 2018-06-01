@@ -22,7 +22,6 @@ S = (4096,2160)
 # *****************************************************
 # set the angle of the camera here (subtract from 180 depending on the axis)
 angle= 180-131.5
-inputName = '284STAB.AVI'
 alpha_=angle
 beta_ = 90
 gamma_=90
@@ -57,7 +56,7 @@ termination_eps = -1e-16;
 criteria = (cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, number_of_iterations,  termination_eps)
 
 
-# set filenames for input and for saving the stabilized movie
+# set filenames for input and for saving the stabilized movie (input has to be in the current directory)
 inputName = 'DJI_0284.MP4'
 outputName = '284STAB2.AVI'
 
